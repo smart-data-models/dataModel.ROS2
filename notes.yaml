@@ -1,0 +1,40 @@
+notesPrevious:
+  The DataModel.ROS2 contains NGSI-LD compliant representations of common ROS2 message types, allowing robotic systems to publish and subscribe to data using standardized FIWARE interfaces, 
+  ### Publishing ROS2 data to FIWARE
+
+```python
+# ROS2 node publishing geometry_msgs/Pose
+import rclpy
+from geometry_msgs.msg import Pose
+import requests
+
+def ros_to_ngsi(pose_msg, entity_id):
+    """Convert ROS2 Pose to NGSI-LD format"""
+    return {
+        "id": f"urn:ngsi-ld:GeometryMsgsPose:{entity_id}",
+        "type": "GeometryMsgsPose",
+        "position": {
+            "type": "Property",
+            "value": {
+                "x": pose_msg.position.x,
+                "y": pose_msg.position.y,
+                "z": pose_msg.position.z
+            }
+        },
+        "orientation": {
+            "type": "Property",
+            "value": {
+                "x": pose_msg.orientation.x,
+                "y": pose_msg.orientation.y,
+                "z": pose_msg.orientation.z,
+                "w": pose_msg.orientation.w
+            }
+        },
+        "@context": [
+            "https://smart-data-models.github.io/dataModel.ROS2/context.jsonld"
+        ]
+    }
+```
+
+notesEnd:
+  
