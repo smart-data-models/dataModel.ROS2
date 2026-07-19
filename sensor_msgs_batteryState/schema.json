@@ -51,33 +51,33 @@
         },
         "voltage": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Voltage in Volts (V)"
+          "description": "Property. Model:'https://schema.org/Number'. Voltage in Volts (V). NaN if not available"
         },
         "temperature": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Temperature in Celsius (°C)"
+          "description": "Property. Model:'https://schema.org/Number'. Temperature in Celsius (°C). NaN if not available"
         },
         "current": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Current in Amperes (A). Negative indicates discharging"
+          "description": "Property. Model:'https://schema.org/Number'. Current in Amperes (A). Negative indicates discharging. NaN if not available"
         },
         "charge": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Current charge in Ampere-hours (Ah)"
+          "description": "Property. Model:'https://schema.org/Number'. Current charge in Ampere-hours (Ah). NaN if not available"
         },
         "capacity": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Total capacity in Ampere-hours (Ah)"
+          "description": "Property. Model:'https://schema.org/Number'. Total capacity in Ampere-hours (Ah). NaN if not available"
         },
         "designCapacity": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Design capacity in Ampere-hours (Ah)"
+          "description": "Property. Model:'https://schema.org/Number'. Design capacity in Ampere-hours (Ah). NaN if not available"
         },
         "percentage": {
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Model:'https://schema.org/Number'. Charge percentage (0.0 to 1.0)"
+          "description": "Property. Model:'https://schema.org/Number'. Charge percentage (0.0 to 1.0). NaN if not available"
         },
         "powerSupplyStatus": {
           "type": "integer",

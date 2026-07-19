@@ -51,11 +51,11 @@
         },
         "childFrameId": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Child frame identifier (typically robot base frame)"
+          "description": "Property. Model:'https://schema.org/Text'. Child frame identifier"
         },
         "pose": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/StructuredValue'. Pose estimate with covariance with 6x6 covariance matrix",
+          "description": "Property. Model:'https://schema.org/StructuredValue'. Pose estimate with covariance",
           "properties": {
             "pose": {
               "type": "object",
@@ -135,7 +135,7 @@
         },
         "twist": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/StructuredValue'. Velocity estimate with covariance 6x6 matrix",
+          "description": "Property. Model:'https://schema.org/StructuredValue'. Velocity estimate with covariance",
           "properties": {
             "twist": {
               "type": "object",

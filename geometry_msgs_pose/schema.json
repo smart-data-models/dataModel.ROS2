@@ -47,7 +47,7 @@
         },
         "orientation": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/StructuredValue'. Orientation as a quaternion (x, y , z, w)",
+          "description": "Property. Model:'https://schema.org/StructuredValue'. Orientation as a quaternion",
           "properties": {
             "x": {
               "type": "number",
