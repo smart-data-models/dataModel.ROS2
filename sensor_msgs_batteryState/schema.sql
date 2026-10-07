@@ -1,7 +1,7 @@
 /* (Beta) Export of data model sensor_msgs_batteryState of the subject dataModel.ROS2 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE powerSupplyHealth_type AS ENUM ('0', '1', '2', '3', '4', '5', '6', '7', '8');
-CREATE TYPE powerSupplyStatus_type AS ENUM ('0', '1', '2', '3', '4');
-CREATE TYPE powerSupplyTechnology_type AS ENUM ('0', '1', '2', '3', '4', '5', '6');
+CREATE TYPE sensor_msgs_batteryState_powerSupplyHealth_type AS ENUM ('0', '1', '2', '3', '4', '5', '6', '7', '8');
+CREATE TYPE sensor_msgs_batteryState_powerSupplyStatus_type AS ENUM ('0', '1', '2', '3', '4');
+CREATE TYPE sensor_msgs_batteryState_powerSupplyTechnology_type AS ENUM ('0', '1', '2', '3', '4', '5', '6');
 CREATE TYPE sensor_msgs_batteryState_type AS ENUM ('SensorMsgsBatteryState');
 CREATE TABLE sensor_msgs_batteryState (
   "address" JSON,
@@ -24,9 +24,9 @@ CREATE TABLE sensor_msgs_batteryState (
   "name" TEXT,
   "owner" JSON,
   "percentage" NUMERIC,
-  "powerSupplyHealth" powerSupplyHealth_type,
-  "powerSupplyStatus" powerSupplyStatus_type,
-  "powerSupplyTechnology" powerSupplyTechnology_type,
+  "powerSupplyHealth" sensor_msgs_batteryState_powerSupplyHealth_type,
+  "powerSupplyStatus" sensor_msgs_batteryState_powerSupplyStatus_type,
+  "powerSupplyTechnology" sensor_msgs_batteryState_powerSupplyTechnology_type,
   "present" BOOLEAN,
   "seeAlso" JSON,
   "serialNumber" TEXT,
